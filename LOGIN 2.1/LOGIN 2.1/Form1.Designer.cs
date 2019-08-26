@@ -75,6 +75,8 @@
             this.usuario.Name = "usuario";
             this.usuario.Size = new System.Drawing.Size(346, 20);
             this.usuario.TabIndex = 3;
+            this.usuario.TextChanged += new System.EventHandler(this.Usuario_TextChanged);
+            this.usuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Usuario_KeyPress);
             // 
             // contraseña
             // 
@@ -83,6 +85,7 @@
             this.contraseña.Size = new System.Drawing.Size(346, 20);
             this.contraseña.TabIndex = 4;
             this.contraseña.UseSystemPasswordChar = true;
+            this.contraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Contraseña_KeyPress);
             // 
             // button1
             // 
